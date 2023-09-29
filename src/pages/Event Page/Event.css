@@ -1,0 +1,22 @@
+.eventContainer{
+    /* display: flex; */
+    width: 100%;
+}
+
+.eventWrapper{
+    display: flex;
+} 
+
+.main{
+    flex: 11;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.eventList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

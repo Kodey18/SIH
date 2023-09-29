@@ -1,0 +1,18 @@
+.profileContainer{
+    /* display: flex; */
+    width: 100%;
+}
+
+.profileWrapper{
+    display: flex;
+    /* width: 100%; */
+} 
+
+.main{
+    flex: 11;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+

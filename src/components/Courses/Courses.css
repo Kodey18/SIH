@@ -1,0 +1,17 @@
+.coursesContainer{
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+.coursesWrapper{
+    display: flex;
+    background-color: rgb(252,239,233);
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    max-width: fit-content;
+}
+

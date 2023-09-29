@@ -1,0 +1,225 @@
+
+
+#hmcard h3{
+    margin: 0;
+}
+.cd6Container1{
+    width: 100%;
+    height: max-content;
+    transition: transform 1s linear;
+    border-top: 5px solid rgb(214,49,122);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    font-size: 20px;
+    background-color: white;
+}
+
+.cd6Container2{
+    width: 100%;
+    height: max-content;
+    transition: transform 1s linear;
+    border-top: 5px solid rgb(99,145,164);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    font-size: 20px;
+    background-color: white;
+}
+
+.cd6Container3{
+    width: 100%;
+    height: max-content;
+    transition: transform 1s linear;
+    border-top: 5px solid rgb(168,217,115);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    font-size: 20px;
+    background-color: white;
+}
+
+.cd6Container4{
+    width: 100%;
+    height: max-content;
+    transition: transform 2s linear;
+    border-top: 5px solid rgb(232,54,67);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    font-size: 20px;
+    background-color: white;
+}
+
+.cd6Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+.cd6imgDiv{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.cd6Image{
+    width: 100%;
+    height: 250px;
+    display: inherit;
+    transition: transform 0.6s ease-in;
+}
+
+.cd6textDiv{
+    transition: transform 0.5s linear;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.cd6Text{
+    display: none;
+}
+
+.cd6Container1:hover .cd6textDiv{
+    /* transform: translateY(-15px); */
+}
+
+.cd6Container1:hover{
+    transform: translateY(-20px);
+    background-color: rgb(214,49,122);
+    border-radius: 20px;
+    color: white;
+}
+
+.cd6Container1:hover .cd6Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd6Container1:hover .cd6Image{
+    /* transform: scale(1.18);  */
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cdContainer1:hover .cd6imgDiv{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cd6Container1:hover .cd6Text{
+    display: block;
+}
+
+.cd6Container2:hover .cd6textDiv{
+    /* transform: translateY(-15px); */
+}
+
+.cd6Container2:hover{
+    transform: translateY(-20px);
+    background-color: rgb(99,145,164);
+    border-radius: 20px;
+    color: white;
+}
+
+.cd6Container2:hover .cd6Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd6Container2:hover .cd6Image{
+    /* transform: scale(1.18);  */
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cdContainer2:hover .cd6imgDiv{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cd6Container2:hover .cd6Text{
+    display: block;
+}
+
+.cd6Container3:hover .cd6textDiv{
+    /* transform: translateY(-15px); */
+}
+
+.cd6Container3:hover{
+    transform: translateY(-20px);
+    background-color: rgb(168,217,115);
+    border-radius: 20px;
+    color: white;
+}
+
+.cd6Container3:hover .cd6Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd6Container3:hover .cd6Image{
+    /* transform: scale(1.18);  */
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cdContainer3:hover .cd6imgDiv{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cd6Container3:hover .cd6Text{
+    display: block;
+}
+
+.cd6Container4:hover .cd6textDiv{
+    /* transform: translateY(-15px); */
+}
+
+.cd6Container4:hover{
+    transform: translateY(-20px);
+    background-color: rgb(232,54,67);
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.cd6Container4:hover .cd6Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd6Container4:hover .cd6Image{
+    /* transform: scale(1.18);  */
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cdContainer4:hover .cd6imgDiv{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.cd6Container4:hover .cd6Text{
+    display: block;
+}
