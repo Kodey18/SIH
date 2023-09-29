@@ -1,20 +1,14 @@
-import { AuthContext } from "../../hooks/authContext";
-import { useContext, useEffect } from "react";
-import React from "react";
+
+import React, {useContext, useEffect} from "react";
 import "./Home.css";
 import Navbar2 from "../../components/Navbar/Navbar2";
 import home2 from "../../images/home2.jpg";
 import home3 from "../../images/home3.jpg";
-import animImg1 from "../../images/banner-shape-2.png";
-import animImg2 from "../../images/banner-shape-3.png";
 import Person1 from "../../images/person1.jpg";
 import Person2 from "../../images/person2.jpg";
-import Img1 from "../../images/home-img.jpg";
 import Person3 from "../../images/person3.jpg";
 import Blogcard from "../../components/Cards/Blogcard";
 import { NavLink } from "react-router-dom";
-import videobg from "../../images/16455786_05sa_ldnn_2106179_animation.mp4";
-import youngboy from "../../images/youngboy.png";
 import kidbg3 from "../../images/kidbg3.png";
 import kidbg4 from "../../images/kidbg4.png";
 import kidbg5 from "../../images/kidbg5.png";
@@ -25,6 +19,7 @@ import game2 from "../../images/game2.jpg";
 import game3 from "../../images/game3.jpg";
 import game4 from "../../images/game4.jpg";
 import { useTranslation } from 'react-i18next';
+import AuthContext from "../../hooks/AuthContext";
 
 export default function Home() {
   const { isAuthenticated } = useContext(AuthContext);

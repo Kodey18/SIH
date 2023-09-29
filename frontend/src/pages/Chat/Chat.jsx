@@ -1,7 +1,7 @@
 import { useEffect, useContext, useState, useRef } from "react";
 import socketIOClient from "socket.io-client";
 import Conversations from "../../components/Conversations/Conversations";
-import { AuthContext } from "../../hooks/authContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import Messages from "../../components/Messages/Messages";
 import "./Chat.css";
 import Navbar2 from "../../components/Navbar/Navbar2";

@@ -1,5 +1,5 @@
 import React, { useState,  createContext } from "react";
-import { AuthContext } from "../../hooks/authContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import Person1 from "../../images/person1.jpg";
 import "./Messages.css";
 

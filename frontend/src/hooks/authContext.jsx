@@ -1,32 +1,13 @@
-import axios from "axios";
-import { createContext, useState } from "react";
+import React, { createContext, useState } from 'react'
+import axios from 'axios';
 
 export const AuthContext = createContext();
 
-export function AuthContextProvider({children}) {
+export function AuthContextProvider({children}){
 
-    const [isAuthenticated, setIsAuthenticated] = useState({
-        message : `PLease login.`,
-        auth : false,
-        role : 3,
-        client : {}
-    });
-
-    async function getState() {
-        try {
-            const response = await axios.get("http://localhost:3000/", {
-                withCredentials: true,
-            });
-
-            if (response.status === 201) {
-                console.log('from the get role : ',response.data);
-                // console.log('before setting in AuthContext : ',isAuthenticated)
-            }
-        } catch (error) {
-            // Handle error
-            console.error("Error checking authentication status:", error);
-        }
-    }
+    const storedUser = localStorage.getItem('client');
+    const initailUserState = storedUser ? JSON.parse(storedUser) : null;
+    const [lclient, setlclient] = useState(initailUserState);
 
     const login = async(p, formData) => {
         let path;
@@ -40,62 +21,65 @@ export function AuthContextProvider({children}) {
             const response = await axios.post(path, formData, {
                 withCredentials: true,
             });
-
-
+            
             if (response.status === 200) {
                 console.log("authenticated successfully from authcontext login.");
-                setIsAuthenticated({
-                    message : response.data.message,
-                    auth : response.data.auth,
-                    role : response.data.role,
-                    client : response.data.client,
-                });
+                localStorage.setItem('client',JSON.stringify(response.data));
+                setlclient(response.data);
+                console.log(
+                    "client set in local storage from login is : ",
+                    JSON.parse(localStorage.getItem("client"))
+                );
                 return response;
             }
         } catch (error) {
-
             if (!error.response) {
                 console.log(error);
             } else {
                 console.log("here1");
                 console.log(error.response.data);
-            // if the user submits a email that already has an account then add a pop-up component down below.
-            // @vighnesh and @abuzaid.
             }
         }
     }
 
     const logout = async() => {
+        console.log('here1');
         let path;
-        if (isAuthenticated.role === 0 || isAuthenticated.role === "0") {
+        if (lclient.role === 0 || lclient.role === "0") {
                 path = `/api/users/logout`;
         } else {
             path = `/api/ngo/logout`;
         }
 
         try {
+            console.log("here2");
             const res = await axios.post(path, { withCredentials: true });
-            console.log('from the authcontext : ',res.data);
+            console.log('logout from the authcontext : ',res.data);
             if(res.status === 201){
-                setIsAuthenticated(res.data);
+                localStorage.removeItem('client');
+                setlclient(null);
                 return res;
             }
         } catch (err) {
+            console.log("here3");
             console.log(err);
         }
     }
 
 
-    const authContextValue = {
-        isAuthenticated,
+    const contextVlaue = {
+        setlclient,
+        lclient,
         login,
-        logout,
-        getState
+        logout
     }
 
+
     return (
-        <AuthContext.Provider value={authContextValue}>
+        <AuthContext.Provider value={contextVlaue}>
             {children}
         </AuthContext.Provider>
-    );
-};
+    )
+}
+
+export default AuthContext

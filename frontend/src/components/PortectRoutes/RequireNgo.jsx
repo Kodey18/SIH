@@ -1,5 +1,4 @@
-import React, {useContext} from 'react'
-import { AuthContext } from '../hooks/authContext'
+import React, {useEffect} from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 
 const RequireNgo = () => {

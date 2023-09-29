@@ -10,31 +10,31 @@ export default function Post(props) {
   });
 
 
-  function handleLike() {
-    setisLiked(!isLiked);
-    setlike(isLiked ? like - 1 : like + 1);
-  }
+  // function handleLike() {
+  //   setisLiked(!isLiked);
+  //   setlike(isLiked ? like - 1 : like + 1);
+  // }
 
-  async function getUsers(){
-    let res = await fetch("http://localhost:5000/users",{
-      method:"GET"
-    });
+  // async function getUsers(){
+  //   let res = await fetch("http://localhost:5000/users",{
+  //     method:"GET"
+  //   });
 
-    const result=await res.json();
+  //   const result=await res.json();
 
-    if(!res)
-    {
-      console.log("error");
-    }
-    else
-    {
-      setUser(result)
-    }
-  }
+  //   if(!res)
+  //   {
+  //     console.log("error");
+  //   }
+  //   else
+  //   {
+  //     setUser(result)
+  //   }
+  // }
 
-  useEffect(()=>{
-    getUsers()
-  },[])
+  // useEffect(()=>{
+  //   getUsers()
+  // },[])
 
   return (
     <div className="post" data-aos="fade-right">

@@ -1,0 +1,85 @@
+.ptContainer{
+    width: 100%;
+    height: 100vh;
+    background: url('../../images/bg7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ptWrapper{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.ptForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(218, 217, 217);
+    border-radius: 10px;
+}
+
+.ptFormdiv{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.input-summary{
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.ptinput::placeholder{
+    font-size: 20px;
+}
+
+.input-summary::placeholder{
+    font-size: 20px;
+}
+
+.ptinput{
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.ptupload{
+    width: 50%;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.pt-btn{
+    background-color: rgb(0, 140, 255);
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+}
+
+input[type=file]::file-selector-button {
+    width: 70%;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #04b121;
+    color: white;
+    transition: 1s;
+    border: 0px;
+}
+
+input[type=file]::file-selector-button:hover {
+background-color: #41a051;
+
+}

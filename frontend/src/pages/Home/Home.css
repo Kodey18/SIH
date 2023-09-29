@@ -22,11 +22,11 @@ a{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
+    }
 
-  .allkids{
-    display: flex;
-  }
+    .allkids{
+        display: flex;
+    }
 
 .homeSection1{
     display: flex;
@@ -34,7 +34,8 @@ a{
     align-items: center;
     justify-content: center;
     height: 338px;
-    padding: 160px 100px;
+    /* height: 100vh; */
+    padding: 197px 100px;
     color: white;
 }
 
@@ -43,7 +44,7 @@ a{
     content: "";
     position: absolute;
     background: url('../../images/16455786_05sa_ldnn_2106179.jpg') center center/cover;
-    height: 658px;
+    height: 714px;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -52,7 +53,7 @@ a{
 }
 
 .homeSection2{
-    padding: 20px 0px;
+    padding: 40px 0px;
     margin-top: 320px;
     background-color: rgba(251,103,142,255);
     /* margin-bottom: 80px; */
@@ -61,9 +62,12 @@ a{
 }
 
 .homeSection3{
-    padding: 20px;
+    padding: 120px 20px;
     background-image: url('https://bracketweb.com/kidearn-html/assets/images/shapes/program-bg-shape-3.png');
+<<<<<<< HEAD
     margin-bottom: 100px;
+=======
+>>>>>>> b42e7f326e3e9dcc7eb9d8c1db78204316ef1962
 }
 
 .homeSection4{
@@ -85,7 +89,7 @@ a{
 .allkids{
     position: absolute;
     right: 0px;
-    top: 348px;
+    top: 405px;
 }
 .homeimg{
     /* border-radius: 20px; */
@@ -117,6 +121,11 @@ a{
 
     animation: slideRight 2s forwards;
 }
+
+.home .homeSection3 .homeTitle{
+    margin-bottom: 50px;
+}
+
 .homeTitle2{
     font-size: 55px;
     font-weight:1000px;
@@ -153,6 +162,10 @@ a{
     display: flex;
     flex-direction: column;
     margin-right: 50px;
+}
+.home .homeText3{
+    padding: 45px;
+    font-size: large    ; 
 }
 h2{
     margin: 0 ;

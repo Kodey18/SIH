@@ -4,11 +4,11 @@
 
 .navbar2 {
 
-     background: url('../../images/bg24.jpg');
-     background-repeat: no-repeat;
-   background-size: cover;
-    /* height: 10%; */
-    object-fit: cover; 
+    background-color:rgb(246, 236, 224);
+    background: url('../../images/bg24.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     background-position: center;
     /* background-color:rgb(246, 236, 224); */
     letter-spacing: 1px;
@@ -36,11 +36,10 @@
 
 .navbar2 .logo{
     height: 60px;
-    width:190px;
-    border-radius:20px ;
+    width: 190px;
+    border-radius: 20px;
     margin-right: 140px;
-    /* width: 100px; */
-    border: orange 3px solid;
+    border: 3px solid orange;
 }
 
 .navbarimg{
@@ -60,7 +59,7 @@ nav ul li{
     color: white;
         list-style: none;
         font-family: 'Poppins';
-        padding: 6px 10px;
+        padding: 6px 14px;
         margin-right: 12px;
         font-size: 115%;
         font-weight: 400;
@@ -168,11 +167,12 @@ nav ul li span:nth-child(4) {
     --n: 4;
 }
 
+/* drop down css */
 .language-dropdown {
     /* margin-left: 20px;  */
-  }
-  
-  .language-dropdown select {
+}
+
+.language-dropdown select {
     padding: 5px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -182,18 +182,17 @@ nav ul li span:nth-child(4) {
     color:white;
     cursor: pointer;
     outline: none;
-  }
-  
-  .language-dropdown select:hover {
+}
+
+.language-dropdown select:hover {
     border-color: #555;
-  }
-  
-  .language-dropdown select::-ms-expand {
+}
+
+.language-dropdown select::-ms-expand {
     display: none;
-  }
-  
-  .language-dropdown select:focus {
+}
+
+.language-dropdown select:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
+}

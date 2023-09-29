@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, {useEffect } from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router-dom'
 
 const RequireUser = () => {
@@ -13,7 +13,7 @@ const RequireUser = () => {
     return (
         obj && obj.role === 0
             ? <Outlet />
-            : <Navigate  to='/login' state={{from : location}} replace />
+            : <Navigate  to='/userlogin' state={{from : location}} replace />
     )
 }
 

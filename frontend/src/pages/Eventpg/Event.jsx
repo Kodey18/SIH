@@ -1,6 +1,6 @@
 import React from "react";
 import "./Event.css";
-import Sidebar from "../../components/Sidebar/Sidebar";
+
 import Navbar2 from "../../components/Navbar/Navbar2";
 import Eventcard from "../../components/Cards/Eventcard";
 
