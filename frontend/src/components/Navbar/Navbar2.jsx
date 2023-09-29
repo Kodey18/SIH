@@ -22,7 +22,7 @@ export default function Navbar2() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/courses">{t('Videos')}
+          <NavLink to="/courses">{t('Modules')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>

@@ -38,7 +38,7 @@
     height: 60px;
     width:190px;
     border-radius:20px ;
-    margin-right: 220px;
+    margin-right: 140px;
     /* width: 100px; */
     border: orange 3px solid;
 }
@@ -168,9 +168,8 @@ nav ul li span:nth-child(4) {
     --n: 4;
 }
 
-/* Navbar2.css */
 .language-dropdown {
-    margin-left: 20px; /* Adjust the margin as needed */
+    /* margin-left: 20px;  */
   }
   
   .language-dropdown select {
@@ -189,7 +188,6 @@ nav ul li span:nth-child(4) {
     border-color: #555;
   }
   
-  /* Style the dropdown arrow */
   .language-dropdown select::-ms-expand {
     display: none;
   }

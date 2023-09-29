@@ -113,7 +113,7 @@ export default function Home() {
 {/* activites section */}
 <section className="homeSection4">
   <div className="cdWrapper">
-    <h1 className="homeTitle">{t('homepg.ourActivities')}</h1>
+    <h1 className="homeTitle">{t('homepg.ourFeatures')}</h1>
     <div className="cdWrapper2">
       <div className="col1">
         <NavLink className="logout-btn" to={"/login"}>
