@@ -4,24 +4,20 @@
 
 .navbar2 {
 
-    background-color:rgb(246, 236, 224);
-     background: url('../../images/navbg1.jpg');
-  /*  background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -120px; */
-    height: 10%;
-    object-fit: cover;
+     background: url('../../images/bg24.jpg');
+     background-repeat: no-repeat;
+   background-size: cover;
+    /* height: 10%; */
+    object-fit: cover; 
     background-position: center;
-    /* background-color: rgb(196, 35, 151); */
-    /* background-color: rgb(94, 217, 224); */
-    background-color:rgb(246, 236, 224);
+    /* background-color:rgb(246, 236, 224); */
     letter-spacing: 1px;
     color: rgba(50,126,94,255);
     align-items: center;
     justify-content:center;
     font-family: Poppins, serif;
     font-weight: 400;
-    margin: 0px;
+    margin: -4px;
     padding: 0px;
     font-size: 1rem;
     box-sizing: border-box;
@@ -29,17 +25,24 @@
     display: flex;
     flex-wrap: wrap;
     position: fixed;
+    justify-content: right;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
+    /* height: ; */
+    /* width: 100px; */
 }
 
-.navbar2 img{
-    height: 144px;
-    display: none;
-    width: 100%;
+.navbar2 .logo{
+    height: 60px;
+    width:190px;
+    border-radius:20px ;
+    margin-right: 220px;
+    /* width: 100px; */
+    border: orange 3px solid;
 }
+
 .navbarimg{
     opacity: 0.8;
     margin-top: -160px;
@@ -57,8 +60,8 @@ nav ul li{
     color: white;
         list-style: none;
         font-family: 'Poppins';
-        padding: 6px 14px;
-        margin-right: 30px;
+        padding: 6px 10px;
+        margin-right: 12px;
         font-size: 115%;
         font-weight: 400;
         display: inline-block;
@@ -79,6 +82,7 @@ nav ul{
     background-color: transparent;
     background-color: antiquewhite;
     padding: 10px;
+    margin: 10px;
     border-radius: 15px;
 }
 
@@ -118,7 +122,7 @@ nav ul li {
     --c: rgb(143, 3, 143);
     color: var(--c);
 
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     text-align: center;
     position: relative;
@@ -163,3 +167,35 @@ nav ul li span:nth-child(3) {
 nav ul li span:nth-child(4) {
     --n: 4;
 }
+
+/* Navbar2.css */
+.language-dropdown {
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .language-dropdown select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 14px;
+    background-color: #195A99;
+    color:white;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .language-dropdown select:hover {
+    border-color: #555;
+  }
+  
+  /* Style the dropdown arrow */
+  .language-dropdown select::-ms-expand {
+    display: none;
+  }
+  
+  .language-dropdown select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  

@@ -141,7 +141,7 @@ export default function Home() {
         </NavLink>
         <NavLink className="logout-btn" to={"/login"}>
           <div className="cd4" data-aos="zoom-in">
-            <h2 className="cd3title">{t('homepg.quizes')}</h2>
+            <h2 className="cd3title">{t('homepg.quizzes')}</h2>
             <p>{t('homepg.quizesDescription')}</p>
           </div>
         </NavLink>

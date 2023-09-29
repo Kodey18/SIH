@@ -63,13 +63,15 @@ a{
 .homeSection3{
     padding: 20px;
     background-image: url('https://bracketweb.com/kidearn-html/assets/images/shapes/program-bg-shape-3.png');
-
+    margin-bottom: 100px;
 }
 
 .homeSection4{
     background-image: url('https://kidsheaven.wpengine.com/wp-content/uploads/2017/02/yellow_pattern.jpg');
     padding-bottom: 10px;
     background-color: rgb(254,249,243);
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
 }
 
 /* image css */
@@ -112,6 +114,7 @@ a{
     font-family: 'Fredoka', sans-serif;
     transition: transform 1200ms ease, opacity 1200ms ease;
     /* transform: translateX(-200px); */
+
     animation: slideRight 2s forwards;
 }
 .homeTitle2{
@@ -138,6 +141,8 @@ a{
 
 .homeSection4 .homeTitle{
     color: #dc6013;
+    margin-top: 50px;
+
 }
 
 .homeText3{
@@ -167,12 +172,15 @@ h2{
     color: antiquewhite;
     margin: 30px;
     margin-bottom: 50px;
+    
     /* margin-top: 400px; */
 }
-.cdWrapper2{
+.home .cdWrapper2{
     display: flex;
     gap: 30px;
     width: 95%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .home .cdWrapper3{

@@ -1,6 +1,6 @@
 import "./Navbar2.css";
 import { NavLink } from "react-router-dom";
-import img1 from "../../images/navbarimg.png";
+import img1 from "../../images/logoo.png";
 import { useTranslation } from 'react-i18next';
 
 export default function Navbar2() {
@@ -12,59 +12,62 @@ export default function Navbar2() {
 
   const { t } = useTranslation();
 
-
   return (
     <nav className="navbar2" id="mainnav">
-      <img src={img1} alt="new" />
-      <ul className="navbar-links ">
+      <img src={img1} alt="new" className="logo" />
+      <ul className="navbar-links">
         <li>
-          <NavLink to="/">{t('home')}
+          <NavLink to="/">{t('Home')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/courses">{t('courses')}
+          <NavLink to="/courses">{t('Videos')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/blogs">{t('blogs')}
+          <NavLink to="/blogs">{t('Blogs')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="https://kodey18.github.io/quiz-game/">{t('quiz')}
+          <NavLink to="/games">{t('Challenges')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="https://kodey18.github.io/scramble-game/">{t('games')}
+          <NavLink to="https://kodey18.github.io/scramble-game/">{t('Games')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/event">{t('events')}
+          <NavLink to="/event">{t('Events')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/chat">{t('chat')}
+          <NavLink to="/chat">{t('Chat')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/userprofile">{t('profile')}
+          <NavLink to="/userprofile">{t('Profile')}
             <span></span><span></span><span></span><span></span>
           </NavLink>
         </li>
       </ul>
-      <button onClick={() => changeLanguage('en')}>english</button>
-      <button onClick={() => changeLanguage('hi')}>hindi</button>
+      <div className="language-dropdown">
+        <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+        </select>
+      </div>
       <div className="logoutDiv">
         <>
           <button className="lg-btn">
             <NavLink className="logout-btn" to={"/login"}>
-              {t('login')}
+              {t('Login')}
             </NavLink>
           </button>
         </>
